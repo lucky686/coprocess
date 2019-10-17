@@ -1,0 +1,26 @@
+
+<div class="album py-5 bg-light">
+    <div class="container">
+    <div class="row">
+    <div class="card-deck mb-3 text-center mt-5">
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+            <h4 class="btn btn-lg btn-block btn-primary">Process</h4>
+        </div>
+        <div class="card-body" style=" display: flex !important;">
+            <ul class="list-unstyled mt-3 mb-4" *ngFor="let process of processes">
+                <li>
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">{{process.processName}}</div>
+                        <div class="card-body">
+                            <!--<h5 class="card-title">Light card title</h5>-->
+                            <p class="card-text">{{process.description}}</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>

@@ -1,0 +1,41 @@
+﻿<div class="text-center bg-gray py-5">
+    <div class="body-content">
+        <h1 class="jumbotron-heading">Product Owner</h1>
+        <p class="lead text-muted pt-3">a product owner is the leader responsible for maximizing the value of the products created by a scrum development team. But to do this, an agile product owner takes on several roles, including business strategist, product designer, market analyst, customer liaison, and project manager</p>
+
+    </div>
+</div>
+<div class="body-content">
+    <!--<div class="text-center bg-gray py-5">
+        <h1 class="jumbotron-heading">Product Owner</h1>
+        <p class="lead text-muted">a product owner is the leader responsible for maximizing the value of the products created by a scrum development team. But to do this, an agile product owner takes on several roles, including business strategist, product designer, market analyst, customer liaison, and project manager</p>
+    </div>-->
+
+    <div class="py-5 bg-light">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let responsibility of responsibilities">
+                <mat-card class="card mb-4 box-shadow">
+                    <mat-card-header class="mat-card-header">
+                        <!--<div mat-card-avatar class="example-header-image" style="background-image: url('/src/assets/img/{{responsibility.name}}.jpg');"></div>-->
+                        <mat-card-title>{{responsibility.name}}</mat-card-title>
+                        <!--<mat-card-subtitle>product owner role</mat-card-subtitle>-->
+                    </mat-card-header>
+                    <mat-card-content class="mat-card-content">
+                        <img mat-card-image class="image" src="/assets/img/{{responsibility.name}}.jpg" alt="Card image cap">
+                        <div>
+                            {{responsibility.description}}
+                        </div>
+                    </mat-card-content>
+                    <mat-card-actions>
+
+                        <a href="https://www.scrum.org/resources/what-is-a-product-owner" target="_blank" mat-button>References</a>
+                        <a href="/assets/Policy Rules Register v1.6.xlsx" download #clickReferences></a>
+                        <a mat-button (click)="clickReferences.click()"> Templates </a>
+
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+        </div>
+    </div>
+</div>

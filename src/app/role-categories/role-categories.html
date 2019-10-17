@@ -1,0 +1,19 @@
+﻿<div class="album py-5 bg-light">
+    <div class="body-content">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let role of roles">
+                <mat-card class="card mb-4 box-shadow" [routerLink]="role.roleName">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image" style="background-image: url('/src/assets/Roles/{{role.roleName}}.jpg');background-size: cover; width: 40px;"></div>
+                        <mat-card-title>{{role.roleName}}</mat-card-title>
+                        <mat-card-subtitle>A Person Represents Business </mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <img mat-card-image class="image" src="/assets/Roles/{{role.roleName}}.jpg" alt="Card image cap">
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

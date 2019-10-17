@@ -1,0 +1,66 @@
+﻿.tp-card {
+    height: 250px;
+    width: 500px;
+    margin: 4px;
+    background-color: #5A7384;
+    /*display: inline-block;*/
+    /*align-content:center;*/
+    /*display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;*/
+}
+
+.tp-title {
+    color: white;
+    font-style: italic;
+    font-size: large
+}
+
+
+
+.links {
+    color: crimson
+}
+
+.myclass {
+    display: flex;
+    margin: auto;
+}
+
+.example-header-image {
+    background-size: cover;
+}
+.card mb-4 box-shadow {
+    display: flex;
+}
+.mat-card-header {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+.mat-card-content {
+    flex-grow: 1;
+}
+
+.example-card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.mat-card-image {
+    width: calc(100% + 36px) !important;
+    margin: 0 -24px 16px -18px !important;
+}
+
+.mat-card {
+    padding: 18px !important;
+}
+
+.image {
+    height: 150px;
+    max-height: 500px !important;
+    object-fit: cover;
+    object-position: center;
+}

@@ -1,0 +1,35 @@
+﻿<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Scrum Master</h1>
+        <p class="lead text-muted">The Scrum Master is responsible for creating and onboarding project teams, integrating them into the organization and providing a clear vision of the product. The Scrum Master also facilitates communication and information exchange between external groups and the project team.They also monitor project progress,provide timely feedback,and drive a culture of agility and learning.</p>
+
+    </div>
+</section>
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4" *ngFor="let responsibility of responsibilities">
+                <mat-card class="card mb-4 box-shadow">
+                    <mat-card-header class="mat-card-header">
+                        <!--<div mat-card-avatar class="example-header-image" style="background-image: url('/src/assets/img/{{responsibility.name}}.jpg');"></div>-->
+                        <mat-card-title>{{responsibility.name}}</mat-card-title>
+                        <!--<mat-card-subtitle>product owner role</mat-card-subtitle>-->
+                    </mat-card-header>
+                    <mat-card-content class="mat-card-content">
+                        <img mat-card-image class="image" src="/assets/ScrumMaster/{{responsibility.name}}.jpg" alt="Card image cap">
+                        <div>
+                            {{responsibility.description}}
+                        </div>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <a [href]="fileUrl" mat-button download="Well Home Loans-Case Study.pdf">References</a>
+
+                        <a [href]="fileUrl" mat-button download="Well Home Loans-Case Study.pdf">Template</a>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+        </div>
+    </div>
+</div>

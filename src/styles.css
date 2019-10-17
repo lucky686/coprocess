@@ -1,1 +1,214 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #f5f9fd !important;
+}
+
+.bg-gray {
+  background-color: #e7edf3;
+}
+
+.bg-light {
+  background-color: #f5f9fd !important;
+}
+
+.header {
+  padding: 20px 280px;
+  background-color: #155592;
+  text-align: left;
+}
+
+.body-content {
+  padding: 0 280px;
+}
+
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+.list-group {
+  list-style: none;
+}
+
+.text-off-white {
+  color: #f17921;
+}
+
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+   Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.role {
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+  .role:hover {
+      background-color: #f5f9fd;
+  }
+
+  .role span {
+      padding-left: 10px;
+  }
+
+.background-white {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 19px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+  -webkit-transition: color .1s ease-in-out,background-color .1s ease-in-out;
+  transition: color .1s ease-in-out,background-color .1s ease-in-out;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0125), 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.0125), 0 1px 1px rgba(0,0,0,0.05);
+  border-top-width: .0625rem;
+  border-bottom-width: calc(.2rem + .0625rem);
+  background-color: #228be6;
+  background-color: #145592 !important;
+  border-color: #145592 !important;
+}
+
+.crm-navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+}
+/* Only for snippet */
+.double-nav .breadcrumb-dn {
+  color: #fff;
+}
+
+.example-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.image {
+  height: 150px;
+  max-height: 500px !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 48px;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sticky-top {
+  background-color: #ffffff !important;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card-deck {
+  display: inline-grid !important;
+  /* display: flex; */
+  /*-ms-flex-direction: column;*/
+  /*flex-direction: column;*/
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background-color: #003366;
+}
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: #155592;
+  /*box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  */
+}
+
+.nav-item {
+  /*color: #F68B17;*/
+  padding: 7px 0;
+}
+
+  .nav-item a {
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      font-size: 1.05rem;
+      color: #adcde0 !important;
+  }
+
+      .nav-item a:hover {
+          color: #F68B17 !important;
+          text-decoration: none;
+      }
+
+
+.navbar-nav {
+  display: inline;
+ /*  float: right; */
+  top: 0;
+  position: relative;
+  transform: translateY(50%);
+}
+
+  .navbar-nav .nav-link {
+      display: inline;
+  }
+
+
+.mat-card-image {
+  width: calc(100% + 36px) !important;
+  margin: 0 -24px 16px -18px !important;
+}
+
+.mat-card {
+  padding: 18px !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  border: none !important;
+}
+
+.mat-card-content {
+  padding: 10px 14px;
+  color: #8695a5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.6px;
+}
+
+.mat-card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f17921;
+}
+
+.mat-card-subtitle {
+  color: #88a5c1;
+}
+
+.mat-button {
+  color: #5594d0;
+}
+
+.lead {
+  letter-spacing: 0.1px;
+  font-size: 1.1rem !important;
+  font-weight: 400 !important;
+}

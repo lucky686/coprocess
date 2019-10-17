@@ -1,0 +1,4 @@
+{
+    "git.showPushSuccessNotification": true,
+    "git.autofetch": true
+}

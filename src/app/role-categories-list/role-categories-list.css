@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  width: 745px ;
+}
+/* .card bg-light mb-3 {
+margin-right: 10px;
+} */
+
+

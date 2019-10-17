@@ -1,0 +1,71 @@
+﻿<div>
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <!-- <h2 class="justify-content-xl-center">{{linkName}}</h2> -->
+              <!-- <h2 class="justify-content-xl-center">{{linkName}}</h2> -->
+            <div class="card-deck mb-auto text-center mt-5">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="btn btn-lg btn-block btn-primary">People</h4>
+                    </div>
+                    <div class="card-body" style=" display: flex !important;">
+                        <ul class="list-unstyled mt-3 mb-4" *ngFor="let people of peoples">
+                            <li>
+                                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">{{people.peopleName}}</div>
+                                    <div class="card-body">
+                                        <!--<h5 class="card-title">Light card title</h5>-->
+                                        <p class="card-text">{{people.description}}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="btn btn-lg btn-block btn-primary">Process</h4>
+                    </div>
+                    <div class="card-body" style="display: flex !important;">
+                        <ul class="list-unstyled mt-3 mb-4" *ngFor="let process of processes">
+                            <li>
+                                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">{{process.processName}}</div>
+                                    <div class="card-body">
+                                        <!--<h5 class="card-title">Light card title</h5>-->
+                                        <p class="card-text">{{process.description}}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="btn btn-lg btn-block btn-primary">Tools</h4>
+                    </div>
+                    <div class="card-body" style="display: flex !important;">
+                        <ul class="list-unstyled mt-3 mb-4" *ngFor="let tool of tools">
+                            <li class="accordion">
+                            <li>
+                                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">{{tool.toolName}}</div>
+                                    <div class="card-body">
+                                        <!--<h5 class="card-title">Light card title</h5>-->
+                                        <p class="card-text">{{tool.description}}</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<router-outlet></router-outlet>
+
+
