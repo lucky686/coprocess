@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule , CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { RoleCategoriesComponent } from './role-categories/role-categories.component';
@@ -52,5 +52,8 @@ import { CheckComponent } from '../app/check/check.component';
     declarations: [AppComponent, RoleCategoriesComponent, RoleCategoriesListComponent, ProductOwnerComponent, ArchitectComponent, ManagerComponent, DevTeamComponent, QAComponent, ScrumMasterComponent, RoleCategoriesFlowChartComponent, PeopleComponent, ProcessComponent, ToolsComponent, CheckComponent],
     bootstrap: [AppComponent],
     providers: [AuthService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
+    schemas: [
+      CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }

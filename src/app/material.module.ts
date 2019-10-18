@@ -1,4 +1,4 @@
-﻿import { NgModule } from '@angular/core';
+﻿import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {
     MatButtonModule,
@@ -39,7 +39,10 @@ import {
         MatNativeDateModule,
         MatSidenavModule,
         MatGridListModule
-    ]
+    ],
+    schemas: [
+      CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 
 export class MaterialModule { }
